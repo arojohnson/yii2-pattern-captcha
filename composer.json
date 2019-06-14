@@ -1,0 +1,21 @@
+{
+    "name": "johnson/yii2-pattern-captcha",
+    "description": "Yii2 pattern captcha is nine dots based pattern Captcha to match with the numbers given in the box",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arockia Johnson SR",
+            "email": "johnson@arojohnson.tk"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Johnson\\": ""
+        }
+    }
+}
