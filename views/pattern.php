@@ -13,7 +13,7 @@
 
         </div>
     </div>
-    <input data-url="http://localhost/yii2-basic/web/index.php?r=site/login" type="password" id="password" name="password" class="patternlock" />
+    <input data-url="<?= !empty($url) ? $url : '/' ?>" type="password" name="<?= $name ? $name : 'password' ?>" class="patternlock" />
 </div>
 <div class="jsucc" style="display: none;">
 

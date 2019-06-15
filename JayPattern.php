@@ -16,6 +16,18 @@ use yii\base\Widget;
  */
 class JayPattern extends Widget {
 
+    /**
+     *
+     * @var String name of the input field generated
+     */
+    public $name = '';
+    
+    /**
+     *
+     * @var Ajax URL
+     */
+    public $ajaxUrl = '';
+
     public function init() {
         parent::init();
         JayPatternAsset::register($this->getView());
@@ -68,7 +80,7 @@ class JayPattern extends Widget {
     public function run() {
         $rand = $this->genRandCode();
         $_SESSION['_pt_code'] = $rand;
-        return $this->render('pattern', ['rand' => $rand]);
+        return $this->render('pattern', ['rand' => $rand, 'name' => $this->name, 'url' => $this->ajaxUrl]);
     }
 
 }
