@@ -4,13 +4,17 @@
  * View File - for Yii2-pattern-captcha
  */
 ?>
-<form method="post" onsubmit="return submitform()">
-    <h2>Please login</h2>
+<div class="allPatternBox">
     <div >
-        <input type="password" id="password" name="password" class="patternlock" />
-        <input type="submit" value="login"/>
-    </div>
-</form>
-<script type="text/javascript">
+        <div class="jpattern">
+            <?= $rand ?>
+        </div>
+        <div class="jreload">
 
-</script>
+        </div>
+    </div>
+    <input data-url="http://localhost/yii2-basic/web/index.php?r=site/login" type="password" id="password" name="password" class="patternlock" />
+</div>
+<div class="jsucc" style="display: none;">
+
+</div>
